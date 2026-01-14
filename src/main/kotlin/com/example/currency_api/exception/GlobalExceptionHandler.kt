@@ -1,4 +1,4 @@
-package com.example.currency_api
+package com.example.currency_api.exception
 
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity

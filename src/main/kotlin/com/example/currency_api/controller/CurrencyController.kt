@@ -1,5 +1,9 @@
-package com.example.currency_api
+package com.example.currency_api.controller
 
+import com.example.currency_api.config.CurrencyProperties
+import com.example.currency_api.dto.CurrencyResponse
+import com.example.currency_api.entity.ExchangeLog
+import com.example.currency_api.repository.ExchangeLogRepository
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
@@ -34,7 +38,7 @@ class CurrencyController(
         val result = amount * rate // KRW 기준이므로 곱하기
 
         val log = ExchangeLog(
-            targetCurrency =  target,
+            targetCurrency = target,
             sourceAmount = amount,
             resultAmount = result
         )

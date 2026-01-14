@@ -1,4 +1,4 @@
-package com.example.currency_api
+package com.example.currency_api.dto
 
 data class CurrencyResponse (
     val source: String,
@@ -6,5 +6,3 @@ data class CurrencyResponse (
     val amount: Double,
     val result: Double
 )
-
-

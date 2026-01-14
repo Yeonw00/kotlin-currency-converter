@@ -1,4 +1,4 @@
-package com.example.currency_api
+package com.example.currency_api.config
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 
