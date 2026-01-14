@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    # 데이터베이스 이름만 정확히 적고, 나머지는 예시입니다.
+    url: jdbc:mysql://localhost:3306/currency_converter?serverTimezone=Asia/Seoul
+    username: YOUR_DB_USERNAME_HERE
+    password: YOUR_DB_PASSWORD_HERE
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+currency:
+  api:
+    url: https://api.exchangerate-api.com/v4/latest/KRW
+    default-rate: 1350.0
