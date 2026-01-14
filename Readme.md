@@ -25,6 +25,7 @@ src/main/kotlin/com/example/currency_api/
 ├── exception/         # 전역 예외 처리 (Global Exception Handler)
 ├── repository/        # JPA 데이터 접근 인터페이스
 └── service/           # 환율 계산 및 스케줄러 비즈니스 로직
+```
 
 ## 실행 방법 (Getting Started)
 1. 이 저장소를 클론합니다.
